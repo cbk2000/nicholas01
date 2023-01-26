@@ -1,0 +1,14 @@
+master
+Penjelasan: Branch utama yang akan menjadi branch production/release up to date.
+Cara penggunaan branch ini adalah dengan ...
+
+dev
+Penjelasan: Branch untuk tahapan staging dan tahapan development.
+Cara...
+
+release: xx
+Penjelasan: Branch untuk menyimpan version program pada versi xx dimana xx adalah sebuah integer 2 digit.
+Cara
+
+hotfix: release.x
+Penjelasan: Branch untuk melakukan fix terhadap suatu problem/bug yang terdapat pada branch release. Sama halnya x disini adalah sebuah integer.
