@@ -1,14 +1,15 @@
 master
 Penjelasan: Branch utama yang akan menjadi branch production/release up to date.
-Cara penggunaan branch ini adalah dengan ...
+Cara penggunaan branch ini adalah branch yang akan dijadikan branch untuk deployment dan menjadi branch utama yang akan menunjukan kode yang paling up to date.
 
 dev
 Penjelasan: Branch untuk tahapan staging dan tahapan development.
-Cara...
+Cara penggunaan branch ini adalah untuk meletakan changes baru yang akan di push ke branch master pada update program berikutnya. Branch ini tidak di deploy.
 
-release: xx
-Penjelasan: Branch untuk menyimpan version program pada versi xx dimana xx adalah sebuah integer 2 digit.
-Cara
+release_XX
+Penjelasan: Branch untuk menyimpan version program pada versi XX dimana XX adalah sebuah integer 2 digit.
+Cara penggunaan branch ini adalah setiap pembuatan version baru maka dibuat branch release baru dari master.
 
-hotfix: release.x
-Penjelasan: Branch untuk melakukan fix terhadap suatu problem/bug yang terdapat pada branch release. Sama halnya x disini adalah sebuah integer.
+hotfix_release.X
+Penjelasan: Branch untuk melakukan fix terhadap suatu problem/bug yang terdapat pada branch release. Sama halnya X disini adalah sebuah integer.
+Cara penggunaan branch ini adalah jika terdapat problem/bug yang terletak pada suatu release maka perlu dibuat branch baru bernama hotfix_release.X dimana X adalah versi release yang mengakibatkan problem/bug nya tersebut.
