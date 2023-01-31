@@ -1,0 +1,7 @@
+1. Masuk ke repository Github yang ingin di deploy.
+2. Masuk ke opsi Settings pada repository Github tersebut.
+3. Pilih opsi Pages pada sidebar yang tersedia pada opsi Settings.
+4. Pilih Source deployment yaitu model deploy yang ingin dilakukan, Pilih opsi Deploy from a branch.
+5. Pilih Branch yang akan di deploy ke Github Pages dengan dropdown pada menu Branch.
+6. Pilih directory yang ingin di deploy
+7. Tekan tombol Save
