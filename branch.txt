@@ -1,18 +1,42 @@
 master
 Penjelasan: Branch utama yang akan menjadi branch production/release up to date.
 Cara penggunaan branch ini adalah branch yang akan dijadikan branch untuk deployment dan menjadi branch utama yang akan menunjukan kode yang paling up to date.
+Untuk melakukan fetch version terbaru dari master: git pull origin master
+Untuk masuk ke branch master: git checkout master
 
 dev
 Penjelasan: Branch untuk tahapan staging dan tahapan development.
 Cara penggunaan branch ini adalah meletakan changes baru yang akan di push ke branch master pada update program berikutnya. Branch ini tidak di deploy.
+Untuk melakukan fetch version terbaru dari dev: git pull origin dev
+Untuk melakukan staging dari dev: git add .
+Untuk melakukan commit dari dev: git commit -m "commit message"
+Untuk melakukan push dari dev: git push origin dev
+Untuk masuk ke branch dev: git checkout dev
 
 release
 Penjelasan: Branch untuk meletakan TARBALL release terbaru.
 Cara penggunaan branch ini adalah meletakan TARBALL yang akan menjadi release versi terbaru.
+Untuk melakukan fetch version terbaru dari release: git pull origin release
+Untuk melakukan staging dari release: git add .
+Untuk melakukan commit dari release: git commit -m "commit message"
+Untuk melakukan push dari release: git push origin release
+Untuk masuk ke branch release: git checkout release
+Untuk membuat tag baru dari branch release: git tag "namaTag"
+Untuk melakukan push dari tag yang baru dibuat: git push origin "namaTag"
+Untuk masuk ke sebuah tag: git checkout "namaTag"
+
 
 hotfix
 Penjelasan: Branch untuk melakukan hotfix pada sebuah release.
 Cara penggunaan branch ini adalah jika ditemukan sebuah bug pada current release maka branch ini akan digunakan untuk menyimpan latest fix dari version yang ingin dibetulkan.
+Untuk melakukan fetch version terbaru dari hotfix: git pull origin hotfix
+Untuk melakukan staging dari hotfix: git add .
+Untuk melakukan commit dari hotfix: git commit -m "commit message"
+Untuk melakukan push dari hotfix: git push origin hotfix
+Untuk masuk ke branch hotfix: git checkout hotfix
+Untuk membuat tag baru dari branch hotfix: git tag "namaTag"
+Untuk melakukan push dari tag yang baru dibuat: git push origin "namaTag"
+Untuk masuk ke sebuah tag: git checkout "namaTag"
 
 vXX
 Penjelasan: Tag untuk menyimpan version program pada versi XX dimana XX adalah sebuah integer 2 digit.
