@@ -15,6 +15,12 @@ function main(){
     echo "script.sh: Running Input Check"
     bash "$working_dir/scripts/input_check.sh" "$working_dir/$input" "$week"
 
+    echo "script.sh: Running Output Check"
+    bash "$working_dir/scripts/output_check.sh" "$working_dir/$output" "$week"
+
+    echo "script.sh: Processing absen directory"
+    bash "$working_dir/scripts/absen_process.sh" "$working_dir/$input" "$week" "$working_dir/$output"
+
 }
 
 # Read configuration and check for unset configs
