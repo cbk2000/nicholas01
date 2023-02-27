@@ -17,6 +17,12 @@ function check_file(){
     if ls "$input_dir/$current_week/absen" | grep "absen.txt" >/dev/null; then
         echo "absen_process.sh: absen file found, proceeding..."
 
+        echo "absen_process.sh: Check if there is already an absen_output.txt file..."
+        if ls "$output_dir/$current_week/absen" | grep "absen_output.txt" >/dev/null; then
+           echo "absen_process.sh: absen_output.txt file found, deleting and generating a new one..." 
+           rm "$output_dir/$current_week/absen/absen_output.txt"
+        fi
+
         echo "absen_process.sh: Creating absen_output.txt file..."
         touch "$output_dir/$current_week/absen/absen_output.txt"
 

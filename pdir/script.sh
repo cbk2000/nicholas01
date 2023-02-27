@@ -21,6 +21,9 @@ function main(){
     echo "script.sh: Processing absen directory"
     bash "$working_dir/scripts/absen_process.sh" "$working_dir/$input" "$week" "$working_dir/$output"
 
+    echo "script.sh: Processing quiz directory"
+    bash "$working_dir/scripts/quiz_process.sh" "$working_dir/$input" "$week" "$working_dir/$output"
+
 }
 
 # Read configuration and check for unset configs
